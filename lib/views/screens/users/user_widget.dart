@@ -68,7 +68,7 @@ class _UsersWidgetState extends State<UsersWidget> {
     });
 
     try {
-      UserListResponse response = await userApi.getUserList(page: 4);
+      UserListResponse response = await userApi.getUserList(page: page);
 
       if (response.total != 0) {
         setState(() {
